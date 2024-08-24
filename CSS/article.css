@@ -1,0 +1,142 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Article Container */
+
+.article {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #337ab7;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Paragraphs */
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Dividers */
+
+div.divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Ordered Lists */
+
+ol {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol li:before {
+  content: counter(ol-li);
+  counter-increment: ol-li;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #337ab7;
+}
+
+/* List Items */
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .article {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4, h5, h6 {
+    font-size: 14px;
+  }
+  img {
+    margin: 10px 0;
+  }
+}
